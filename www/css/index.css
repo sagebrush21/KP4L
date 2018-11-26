@@ -83,7 +83,8 @@
 			font-family: 		sans-serif;
 			font-size: 			12px;		
 			text-align: 		center;
-            background-image:   url('../img/stripes.png');
+            background-color:   #8C1D40;
+            color:              #FFC627;
 		}
         
 #mainBody {
@@ -92,7 +93,7 @@
 
 .radioButtons {
     float: left;
-    border: 1px solid black;
+    border: 1px solid #FFC627;
 }
 #roomRow{
     display: inline-block;
@@ -110,4 +111,11 @@
     display: inline-block;
     width: 100%;
     padding-top: 20px;
+}
+
+#buttonRow button{
+    width: 50%;
+    background-color: #FFC627;
+    border: black;
+    border-radius: 10px;
 }
