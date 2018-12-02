@@ -19,47 +19,42 @@
         <div class="col-sm-12 col-lg-12">
             <h1>Hot &amp; Cold</h1>
         </div>
-        <form>
+        <form onsubmit="return false">
             <div id="roomRow">
                 <div class="col-sm-06 col-lg-06">
-                     <input id="class" type="text" list="classList" placeholder="Class #" />
-                                <datalist id="classList">
-                                    <option>130</option>
-                                    <option>318</option>
-                                    <option>215</option>
-                                    <option>201</option>
-                                    <option>316</option>
-                                </datalist>
+                                <select id="room">
+                                    <option value="130">130</option>
+                                    <option value="318"> 318</option>
+                                    <option value="215">215</option>
+                                    <option value="201">201</option>
+                                    <option value="316">316</option>
+                                </select>
                 </div>
                 <div class="col-sm-06s col-lg-06">
-                    <input id="class" type="text" list="classList" placeholder="Bulding" />
-                                <datalist id="classList">
-                                    <option>BAC</option>
-                                    <option>MCD</option>
-                                    <option>BA</option>
-                                    <option>MU</option>
-                                </datalist>
+                                <select id="building">
+                                    <option value="BAC">BAC</option>
+                                    <option value="BAC">BAC</option>
+                                    <option value="BA">BA</option>
+                                    <option value="BA">BA</option>
+                                </select>
                 </div>
             </div>  
             <div id="tempRow">
                 <div class="col-sm-06 col-lg-06">
-                    <input type="text" placeholder="asurite"/>
+                    <input type="text" placeholder="asurite" id="asurite"/>
                 </div>
                 <div class="col-sm-06 col-lg-06 radioButtons">
-                        <input type="radio" name="temp" value="hot"> Too Hot<br>
-                        <input type="radio" name="temp" value="cold"> Too Cold<br>      
+                        <input id="radio1" type="radio" name="temp"> Too Hot<br>
+                        <input id="radio2" type="radio" name="temp"> Too Cold<br>      
                 </div>
             </div>
             <div id="buttonRow">
-                <button>Submit</button>
+                <button onclick="getDataCopy()">Submit</button>
             </div>
             
         </form>
         
 	</div>
-
-	<script type="text/javascript" src="cordova.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
-
+  <script src="./js/index.js"></script>
 </body>
 </html>
